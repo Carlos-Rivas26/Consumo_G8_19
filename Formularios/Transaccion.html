@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaccion</title>
+    <!-- CSS only -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="/JS/Transaccion.js"></script>
+</head>
+<body style="background-color: #96a09f00; font-family:'Times New Roman', Times, serif;">
+
+    <div class="container">
+        <div class="consulta mt-4" >
+            <div class="row">
+                <div class="col-6" >
+                    <h3>
+                        Lista de Transaccion.
+                    </h3>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="table table-responsive">
+                    <table class="table table-hover"> 
+                        <thead > 
+                            <tr>
+                                <th>Codigo transaccion</th>
+                                <th>Tipo transaccion</th>
+                                <th>Cod cliente</th>
+                                <th>Fecha transaccion</th>
+                                <th>Monto transaccion</th>
+                                <th>Sucursal</th>
+                                <th>Num cuenta</th>
+                            </tr>  
+                        </thead > 
+                        <tbody id="DataTransaccion">
+                           
+                         </tbody>
+
+                    </table> 
+                
+                </div>  
+            </div>
+        </div>
+    <div class="Formulario">
+        <div class="row">
+            <div class="col-12">
+                <h3>
+                    Agregar Nueva Transaccion
+                </h3>
+            </div>
+           <div class="col-12">
+            <form class="Transaccion">
+                <label for="">CODIGO TRANSACCIÓN</label> 
+                    <input type="text" id="Codigo_transaccion"  class="form-control" placeholder="Ingrese el código de la Transacción"> 
+                    <label for="">TIPO TRANSACCIÓN</label>
+                    <input type="text" id="Tipo_transaccion"  class="form-control" placeholder="Ingrese el tipo Transacción">
+                    <label for="">CÓDIGO CLIENTE</label>
+                    <input type="text" id="Cod_cliente"  class="form-control" placeholder="Ingrese el código del cliente">
+                    <label for="">FECHA TRANSACCIÓN</label>
+                    <input type="text" id="Fecha_transaccion"  class="form-control" placeholder="Ingrese la fecha de la Transacción""> 
+                    <label for="">MONTO TRANSACCIÓN</label>
+                    <input type="text" id="Monto_transaccion"  class="form-control" placeholder="Ingrese el monton de la Transaccion"> 
+                    <label for="">SUCURSAL</label>
+                    <input type="text" id="Sucursal"  class="form-control" placeholder="Ingrese la sucursal de la Transacción"> 
+                    <label for="">NÚMERO DE CUENTA</label>
+                    <input type="text" id="Num_cuenta"  class="form-control" placeholder="Ingrese el numero de cuenta de la Transacción"> 
+                     <hr>
+                     <div id="btnagregartransaccion">
+                        <input type="submit" id="btnagregar" onclick="AgregarTransaccion()"  value="Ingresar Transaccion"  class="btn btn-success">
+
+                     </div>
+            </form>
+           </div>
+        </div>
+
+    </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
