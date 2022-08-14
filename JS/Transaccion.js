@@ -1,7 +1,7 @@
 var UrlTransaccion = 'http://20.216.41.245:90/G8_19/controller/transaccion.php?opc=Gettransaccions'
 var UrlInsertarTransaccion = 'http://20.216.41.245:90/G8_19/controller/transaccion.php?opc=InsertTransaccion'
 var UrlGetTransaccion = 'http://20.216.41.245:90/G8_19/controller/transaccion.php?opc=Gettransaccion'
-var UrlUpdateTransaccion = 'http://localhost:90/G8_19/controller/transaccion.php?opc=UpdateTransaccion'
+var UrlUpdateTransaccion = 'http://20.216.41.245:90/G8_19/controller/transaccion.php?opc=UpdateTransaccion'
 var UrlDeleteTransaccion ='http://20.216.41.245:90/G8_19/controller/transaccion.php?opc=DeleteTransaccion'
 $(document).ready(function(){
     CargarTransaccion();
